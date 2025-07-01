@@ -1,0 +1,79 @@
+          * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: url(image/gatodormindo.png) no-repeat center center fixed; /* Para que a imagem fique fixa no fundo.*/
+            background-size: cover; /* Cobre todo o espaço. */
+            text-align: center;
+            padding-bottom: 40px;
+            
+            background-color: #f4f4f4; /* Uma cor sólida de fallback caso a imagem não carregue.*/
+            color: #fff; /* Cor do texto principal agora é branca para destacar na imagem.*/
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombreado para melhorar a legibilidade do texto.*/
+        }
+
+             header {
+            height: 150px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.4); 
+        }
+
+            h1 {
+            color: #fff; 
+            font-size: 2.8em; 
+            margin-top: 50px; 
+            margin-bottom: 30px; 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+        }
+
+        /* ---- Estilos para os parágrafos----- */
+        p {
+            font-size: 1.2em; 
+            margin-bottom: 20px; 
+            max-width: 800px; 
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 30px; 
+
+            /* ----- Adicionado: Cor de fundo semi-transparente para os parágrafos para melhorar a legibilidade sobre a imagem ----- */
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 15px 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ----- Estilo para a última frase da campanha ----- */
+        .campaign-slogan {
+            font-weight: bold;
+            color: #ffda6a; 
+            margin-top: 40px;
+            font-size: 1.5em;
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(21, 1, 30, 0.1);
+        }
+
+        .back-to-home:hover {
+            color: #ffda6a; /* Cor de hover para destacar */
+

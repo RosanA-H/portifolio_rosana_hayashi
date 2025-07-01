@@ -1,0 +1,221 @@
+        /*----- Estilo geral-----*/
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0;
+        }
+
+        html {
+            scroll-padding-top: 110px; /* Ajuste para rolagem mais precisa.*/
+        }
+
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Fonte escolhida para melhor legibilidade.*/
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* ----- Estilos do Cabeçalho ----- */
+        header{
+            background: url(image/imagem1.png) no-repeat center;
+            background-size: cover;/* Redimensionamento da imagem para que ocupe todo o espaço da página.*/
+            height: 550px;
+            display: flex; /* Centralizar o h1 vertical e horizontalmente.*/
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header-title {
+            font-size: 4.5rem;
+            color: navy;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        /* ----- Estilos do Menu de Navegação ----- */
+        .nav-container {
+            background-color: #2c3e50;
+            padding: 15px 15;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            max-width: 760px;
+            margin: 0 auto;
+            display: flex; /* Para manter os itens lado a lado. */
+            justify-content: center;
+            flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário. */
+            padding: 0;
+        }
+
+        .nav-item {
+            margin: 0 15px; /* Espaçamento entre os itens do menu. */
+            flex-shrink: 0; /* Impede que os itens encolham desnecessariamente.*/
+        }
+
+        .nav-link {
+            display: block;
+            text-decoration: none;
+            color: #ecf0f1;
+            padding: 12px 12px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .nav-link:hover {
+            background-color: #07045c;
+            color: white;
+        }
+
+        /* ----- Estilos para o Conteúdo Principal (seções) ----- */
+        .content-section {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h2 {
+            color: blue;
+            margin-bottom: 20px;
+            border-bottom: 2px solid blue;
+            padding-bottom: 10px;
+        }
+
+        /* Ajustes para parágrafos e listas dentro das seções de conteúdo */
+        .content-section p {
+            margin-bottom: 15px; /* Espaçamento entre parágrafos.*/
+            text-align: justify; /* Mantido justificado conforme sua preferência.*/
+        }
+
+        .content-section ul {
+            list-style-type: disc; /* Estilo para listas.*/
+            margin-left: 20px; /* Recuo para os itens da lista.*/
+            margin-bottom: 15px;
+        }
+
+        .content-section ul li {
+            margin-bottom: 8px;
+        }
+
+        /* ----- Estilos para o footer(rodapé da página) ----- */
+        .footer-container {
+            background-color: #2c3e50; /* Fundo escuro para o rodapé. */
+            color: #ecf0f1; /* Texto claro para o rodapé. */
+            font-size: 1em; /* Ajuste o tamanho da fonte. */
+            padding: 10px; /* Padding geral para o rodapé */
+            margin-top: 60px;
+            border-top: 4px solid #3498db;
+
+            display: flex;
+            flex-direction: column; /* Itens empilhados verticalmente no footer.*/
+            align-items: center; /* Centraliza horizontalmente.*/
+            justify-content: center; /* Centraliza verticalmente.*/
+            text-align: center; /* Alinha o texto do copyright. */
+        }
+
+        /* ----- Estilo para o contêiner dos contatos no rodapé -----*/
+        .footer-contacts {
+            display: flex; /* Flexbox para colocar os itens de contato lado a lado.*/
+            flex-wrap: wrap; /* Permite que os itens quebrem linha se não houver espaço.*/
+            justify-content: center; 
+            align-items: flex-start; 
+            gap: 30px;
+            margin-bottom: 20px; 
+            max-width: 960px; 
+            width: 100%;
+            padding: 10px; 
+        }
+
+        /* ----- Estilo para cada item de contato (imagem + texto) ----- */
+        .contact-item {
+            display: flex; 
+            align-items: center; /
+            gap: 10px;
+            padding: 08px 10px; 
+            border-radius: 5px;
+            white-space: nowrap; 
+            color: #ecf0f1; 
+            font-size: 0.95em; 
+        }
+
+        .contact-item img {
+            height: 30px; 
+            width: auto; 
+            flex-shrink: 0; 
+        }
+
+        /* ----- Estilo para o link "Voltar ao Topo" ----- */
+        .back-to-top {
+            display: inline-block; 
+            margin-top: opx; 
+            margin-bottom: 10px; 
+            color: #3498db;
+            text-decoration: none; 
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            color: #ecf0f1; 
+        }
+
+        /* ----- Estilo para o parágrafo de copyright no rodapé ----- */
+        .footer-container p {
+            margin-top: 0px;
+            margin-bottom: 0;
+            font-size: 0.85em;
+            color: #bdc3c7; 
+        }
+
+        /* ----- Responsividade ----- */
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 3rem;
+            }
+
+            .footer-contacts {
+                flex-direction: column; /* Para empilhar os contatos verticalmente.*/
+                gap: 15px; /* Ajusta o espaçamento vertical entre os contatos.*/
+                align-items: center; /* Para centraliza os itens quando estão empilhados.*/
+            }
+
+            .contact-item {
+                padding: 10px; /* Ajuste o padding para itens empilhados.*/
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-title {
+                font-size: 2.2rem;
+                padding: 10px;
+            }
+
+            header {
+                height: 400px;
+            }
+
+            .footer-container {
+                padding: 20px 10px;
+            }
+
+            .nav-list {
+                padding: 0 5px; 
+            }
+
+            .nav-item {
+                margin: 0 8px; 
+            }
+        }
+ 

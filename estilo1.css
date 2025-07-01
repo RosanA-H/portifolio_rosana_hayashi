@@ -1,0 +1,91 @@
+body {
+    text-align: center; /* Centraliza todo o texto e elementos inline dentro do body. */
+    font-family: Arial, sans-serif; /* Sugestão: adicione uma fonte para melhor visualização. */
+}
+
+header {
+    background: url(image/operadearame.png) no-repeat center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Este já está centralizando o texto dentro do header. */
+    position: relative;
+    overflow: hidden;
+}
+
+        .fontarq{ /*Criado um novo tipo de fonte.*/
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 4px rgba(218, 216, 216, 0.916);/* Sombreado para melhorar a visibilidade.*/
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .fontarq1{ /*Criado um segundo tipo de fonte.*/
+            font-size: 25px;
+            color:rgb(8, 2, 120);
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /*Ssombreado para melhorar a visibilidade.*/
+            padding: 20px; 
+            margin: 0 auto; 
+            max-width: 800px; 
+        }
+
+        .nav-wrapper { /* Estilização da lista de navegação. */
+            background-color: #222121;
+            padding: 10px 0; 
+            text-align: center; 
+        }
+
+         /* Estilização da lista de navegação. */
+        .nav-wrapper ul {
+            list-style-type: none;
+            margin: auto; /* Para centralizar a lista. */
+            padding: 0;
+            background-color: rgb(255, 234, 0);
+            display: flex; /* Para itens ficarem lado a lado. */
+            justify-content: center; /* Para centralizar os itens na barra de navegação. */
+            width: fit-content; /* Para que a lista ocupa apenas a largura de seu conteúdo. */
+        }
+
+             /* Estilização dos itens da lista. */
+        .nav-wrapper ul li {
+            
+        }
+
+        /* Estilização dos links dentro dos itens da lista. */
+        .nav-wrapper ul li a {
+            display: block; /* Faz o link ocupar todo o espaço do li. */
+            text-decoration: none;
+            color: blue;
+            padding: 8px 16px;
+            text-align: center;
+            white-space: nowrap; /* Impede que o texto do link quebre em várias linhas. */
+        }
+
+        .nav-wrapper ul li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        /* Estilo para o link "Voltar para a página inicial". */
+        .back-to-home {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #333;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+        }
+
+        .back-to-home:hover {
+            background-color: #e0e0e0;
+       }

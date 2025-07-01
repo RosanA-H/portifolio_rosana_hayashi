@@ -1,0 +1,56 @@
+            body {
+            background-color: #e6e6fa; /
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            margin: 0; 
+            padding: 20px; 
+            text-align: center; 
+
+            /* Estilo para o título principal */
+        h1 {
+            color: #000080; /* Azul escuro, mais legível que azul puro */
+            margin-top: 0; /* Remove margem superior padrão */
+            margin-bottom: 30px; /* Espaçamento abaixo do título */
+            font-size: 2.5em; /* Tamanho de fonte responsivo para o título */
+        }
+
+        /* Estilo para os parágrafos de conteúdo */
+        p {
+            text-align: left; /* Alinha o texto à esquerda para melhor legibilidade */
+            color: #555; /* Cinza escuro para o texto principal */
+            font-size: 1.1em; /* Tamanho de fonte um pouco maior e responsivo */
+            line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+            max-width: 800px; /* Limita a largura do parágrafo para não ficar muito longo em telas grandes */
+            margin: 0 auto 15px auto; /* Centraliza o parágrafo e adiciona margem inferior */
+        }
+
+        /* Estilo para os parágrafos de fonte (usando uma classe) */
+        .fonte {
+            color: #666; /* Cor mais suave para as fontes */
+            font-size: 0.9em; /* Tamanho menor para as fontes */
+            text-align: justify; /* Centraliza o texto das fontes */
+            margin-top: 20px; /* Espaçamento acima das fontes */
+        }
+
+        /* Estilo para o link "Voltar para a página inicial" */
+        .back-to-home {
+            display: block;
+            text-align: center;
+            margin-top: 10px; /* Aumenta o espaçamento superior */
+            padding: 12px 25px; /* Aumenta o padding para um botão mais clicável */
+            background-color: #f0f0f0;
+            border: 1px solid #ccc; /* Borda mais suave */
+            text-decoration: none;
+            color: #333;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px; /* Cantos mais arredondados */
+            transition: background-color 0.3s ease; /* Transição suave no hover */
+        }
+
+        .back-to-home:hover {
+            background-color: #e0e0e0;
+            color: #000; /* Muda a cor do texto no hover para mais contraste */
+        }
+ 
